@@ -70,6 +70,9 @@ set shiftwidth=2
 " On pressing tab, insert spaces
 set expandtab
 
+" Change popup menu style
+highlight Pmenu guibg=#2F2F2F gui=bold
+
 " Highlight trailing whitespace
 highlight TrailingWhitespace ctermbg=red guibg=red
 match TrailingWhitespace /\s\+$/
