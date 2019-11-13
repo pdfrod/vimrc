@@ -2,7 +2,8 @@
 "                                 PLUGGED PLUGINS
 "===============================================================================
 call plug#begin('~/.vim/plugged')
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'prettier/vim-prettier', {
@@ -22,16 +23,9 @@ Plug 'trusktr/seti.vim'
 Plug 'zxqfl/tabnine-vim'
 call plug#end()
 
-let g:ctrlp_clear_cache_on_exit = 1
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  'node_modules/',
-  \ }
-let g:ctrlp_max_depth = 100
-let g:ctrlp_max_files = 0
-let g:ctrlp_use_caching = 1
-let g:ctrlp_working_path_mode = 'ra'
-" Use C-h to switch between buffers
-nnoremap <C-h> :CtrlPBuffer<CR>
+" Set keyboard shortcuts for fuzzy file finder (using fzf)
+nnoremap <C-p> :GFiles<CR>
+nnoremap <C-h> :Buffers<CR>
 
 " Set git as the default vim-grepper tool
 runtime plugin/grepper.vim
