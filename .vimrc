@@ -24,7 +24,7 @@ Plug 'zxqfl/tabnine-vim'
 call plug#end()
 
 " Set keyboard shortcuts for fuzzy file finder (using fzf)
-nnoremap <C-p> :GFiles<CR>
+nnoremap <C-p> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <C-h> :Buffers<CR>
 
 " Set git as the default vim-grepper tool
