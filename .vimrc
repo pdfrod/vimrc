@@ -30,7 +30,7 @@ nnoremap <C-h> :Buffers<CR>
 " Set git as the default vim-grepper tool
 runtime plugin/grepper.vim
 let g:grepper.tools = ['git']
-let g:grepper.git.grepprg = 'git grep -nGIi'
+let g:grepper.git.grepprg = 'git grep -nGIi --untracked'
 
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.css,*.graphql,*.html,*.js,*.json,*.jsx,*.scss,*.ts,*.tsx,*.yaml PrettierAsync
