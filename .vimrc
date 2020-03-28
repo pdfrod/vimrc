@@ -30,6 +30,9 @@ call plug#end()
 nnoremap <C-p> :GFiles --cached --others --exclude-standard<CR>
 nnoremap <C-h> :Buffers<CR>
 
+" Disable fuzzy file finder preview window
+let g:fzf_preview_window = ''
+
 " Set git as the default vim-grepper tool
 runtime plugin/grepper.vim
 let g:grepper.tools = ['git']
