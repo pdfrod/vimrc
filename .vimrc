@@ -104,6 +104,9 @@ noremap $ g_
 nnoremap <silent> <C-j> :m .+1<CR>
 nnoremap <silent> <C-k> :m .-2<CR>
 
+" Insert tabs using Shift + Tab
+inoremap <S-Tab> <C-V><Tab>
+
 " Save Vim backup/swap files inside .vim folder
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
