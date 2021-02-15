@@ -3,6 +3,7 @@
 "===============================================================================
 call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/plugged/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'kchmck/vim-coffee-script'
@@ -96,6 +97,9 @@ set laststatus=2
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
+
+" Set hybrid line numbers (can be disabled with `set number norelativenumber`)
+set number relativenumber
 
 " Make it so $ doesn't copy the line break
 noremap $ g_
