@@ -22,6 +22,7 @@ Plug 'prettier/vim-prettier', {
   \   'yaml'
   \   ]
   \ }
+Plug 'rhysd/vim-clang-format'
 Plug 'slim-template/vim-slim'
 Plug 'trusktr/seti.vim'
 Plug 'zxqfl/tabnine-vim'
