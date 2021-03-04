@@ -16,9 +16,11 @@ Plug 'prettier/vim-prettier', {
   \   'graphql',
   \   'html',
   \   'javascript',
+  \   'javascriptreact',
   \   'json',
   \   'scss',
   \   'typescript',
+  \   'typescriptreact',
   \   'yaml'
   \   ]
   \ }
