@@ -26,6 +26,7 @@ Plug 'prettier/vim-prettier', {
   \ }
 Plug 'rhysd/vim-clang-format'
 Plug 'slim-template/vim-slim'
+Plug 'tomasiser/vim-code-dark'
 Plug 'trusktr/seti.vim'
 Plug 'ycm-core/YouCompleteMe'
 call plug#end()
@@ -68,6 +69,7 @@ set number
 set clipboard=unnamedplus
 
 colorscheme seti
+"colorscheme codedark
 
 " Show existing tab with 2 spaces width
 set tabstop=2
