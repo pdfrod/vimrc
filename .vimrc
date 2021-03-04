@@ -25,7 +25,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'rhysd/vim-clang-format'
 Plug 'slim-template/vim-slim'
 Plug 'trusktr/seti.vim'
-Plug 'zxqfl/tabnine-vim'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 " Set keyboard shortcuts for fuzzy file finder (using fzf)
@@ -42,6 +42,10 @@ let g:grepper.git.grepprg = 'git grep -nGIi --untracked'
 
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.css,*.graphql,*.html,*.js,*.json,*.jsx,*.scss,*.ts,*.tsx,*.yaml PrettierAsync
+
+" C/C++ autocomplete. For installation instruction see:
+" https://github.com/ycm-core/YouCompleteMe/wiki/Full-Installation-Guide
+let g:ycm_clangd_binary_path = 'clangd'
 
 
 "===============================================================================
