@@ -44,8 +44,7 @@ runtime plugin/grepper.vim
 let g:grepper.tools = ['git']
 let g:grepper.git.grepprg = 'git grep -nGIi --untracked'
 
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.css,*.graphql,*.html,*.js,*.json,*.jsx,*.scss,*.ts,*.tsx,*.yaml PrettierAsync
+let g:prettier#autoformat_require_pragma = 1
 
 " C/C++ autocomplete. For installation instruction see:
 " https://github.com/ycm-core/YouCompleteMe/wiki/Full-Installation-Guide
