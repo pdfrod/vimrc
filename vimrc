@@ -2,6 +2,7 @@
 "                                 PLUGGED PLUGINS
 "===============================================================================
 call plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'hashivim/vim-terraform'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -54,6 +55,10 @@ let g:ycm_clangd_binary_path = 'clangd'
 "===============================================================================
 "                                     CONFIG
 "===============================================================================
+
+" Load coc.vim config
+runtime coc.vim
+
 if has("gui_running")
   " GUI is running or is about to start.
   winpos 0 0
