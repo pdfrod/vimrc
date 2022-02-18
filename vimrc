@@ -29,6 +29,7 @@ Plug 'prettier/vim-prettier', {
   \   ]
   \ }
 Plug 'rhysd/vim-clang-format'
+Plug 'jjo/vim-cue'
 Plug 'slim-template/vim-slim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'trusktr/seti.vim'
