@@ -2,17 +2,19 @@
 "                                 PLUGGED PLUGINS
 "===============================================================================
 call plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'cappyzawa/starlark.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'jvirtanen/vim-hcl'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'hashivim/vim-terraform'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'jjo/vim-cue'
 Plug 'junegunn/fzf', { 'dir': '~/.vim/plugged/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'jvirtanen/vim-hcl', {'branch': 'main'}
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'mhinz/vim-grepper'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': [
@@ -29,7 +31,6 @@ Plug 'prettier/vim-prettier', {
   \   ]
   \ }
 Plug 'rhysd/vim-clang-format'
-Plug 'jjo/vim-cue'
 Plug 'slim-template/vim-slim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'trusktr/seti.vim'
