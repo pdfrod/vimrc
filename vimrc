@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'cappyzawa/starlark.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'Exafunction/codeium.vim'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'hashivim/vim-terraform'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
