@@ -34,6 +34,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'rhysd/vim-clang-format'
 Plug 'slim-template/vim-slim'
 Plug 'tomasiser/vim-code-dark'
+Plug 'tpope/vim-surround'
 Plug 'trusktr/seti.vim'
 "Plug 'ycm-core/YouCompleteMe'
 call plug#end()
