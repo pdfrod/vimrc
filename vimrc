@@ -32,6 +32,7 @@ Plug 'prettier/vim-prettier', {
   \   ]
   \ }
 Plug 'rhysd/vim-clang-format'
+Plug 'sheerun/vim-polyglot'
 Plug 'slim-template/vim-slim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-surround'
