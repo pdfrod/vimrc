@@ -80,8 +80,8 @@ set number
 " Make sure VIM copy/pastes to system clipboard
 set clipboard=unnamedplus
 
-colorscheme seti
-"colorscheme codedark
+"colorscheme seti
+colorscheme codedark
 
 " Show existing tab with 2 spaces width
 set tabstop=2
