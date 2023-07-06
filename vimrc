@@ -56,7 +56,7 @@ let g:prettier#autoformat_require_pragma = 1
 
 " C/C++ autocomplete. For installation instruction see:
 " https://github.com/ycm-core/YouCompleteMe/wiki/Full-Installation-Guide
-let g:ycm_clangd_binary_path = 'clangd'
+" let g:ycm_clangd_binary_path = 'clangd'
 
 
 "===============================================================================
