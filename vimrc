@@ -4,7 +4,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'cappyzawa/starlark.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'Exafunction/codeium.vim'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'hashivim/vim-terraform'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -128,18 +127,6 @@ noremap $ g_
 " Line swapping shortcuts
 nnoremap <silent> <C-j> :m .+1<CR>
 nnoremap <silent> <C-k> :m .-2<CR>
-
-" Insert tabs using Shift + Tab
-inoremap <S-Tab> <C-V><Tab>
-
-" Set Codeium shortcuts:
-"   Ctrl + d to accept completion
-"   Ctrl + ' to next completion
-"   Ctrl + « to previous completion
-let g:codeium_disable_bindings = 1
-inoremap <script><silent><nowait><expr> <C-d> codeium#Accept()
-inoremap <C-'> <Cmd>call codeium#CycleCompletions(1)<CR>
-inoremap <C-«> <Cmd>call codeium#CycleCompletions(-1)<CR>
 
 " Save Vim backup/swap files inside .vim folder
 set backupdir=~/.vim/backup//
