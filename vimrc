@@ -71,7 +71,7 @@ if has("gui_running")
   set lines=32 columns=140
 endif
 
-set guifont=Monospace\ 12
+set guifont=Noto\ Mono\ 12
 
 " Show line numbers
 set number
