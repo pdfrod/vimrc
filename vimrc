@@ -68,7 +68,7 @@ runtime coc.vim
 if has("gui_running")
   " GUI is running or is about to start.
   winpos 0 0
-  set lines=32 columns=140
+  set lines=39 columns=146
 endif
 
 set guifont=Noto\ Mono\ 11
