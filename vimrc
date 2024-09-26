@@ -71,7 +71,7 @@ if has("gui_running")
   set lines=32 columns=140
 endif
 
-set guifont=Noto\ Mono\ 12
+set guifont=Noto\ Mono\ 11
 
 " Show line numbers
 set number
@@ -120,6 +120,9 @@ set confirm
 
 " Set hybrid line numbers (can be disabled with `set number norelativenumber`)
 set number relativenumber
+
+" Remove toolbar
+set guioptions -=T
 
 " Make it so $ doesn't copy the line break
 noremap $ g_
