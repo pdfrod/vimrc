@@ -65,8 +65,22 @@ let g:prettier#autoformat_require_pragma = 1
 let NERDTreeShowHidden=1
 
 
-" Use NERDTree bookmarks on Startify
-let g:startify_bookmarks = systemlist("cut -sd' ' -f 2- ~/.NERDTreeBookmarks")
+"===== Startify config =====
+" Show NERDTree bookmarks
+let g:startify_bookmarks = systemlist("cut -sd' ' -f 2- ~/.NERDTreeBookmarks | sort")
+
+" Configure a simple header. The default header takes too much precious space.
+let g:startify_custom_header = ['   STARTIFY']
+
+" Show at most 5 files in the files list
+let g:startify_files_number = 5
+
+let g:startify_lists = [
+  \ { 'type': 'files',     'header': ['   MRU']            },
+  \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+  \ { 'type': 'commands',  'header': ['   Commands']       },
+  \ ]
+
 
 " C/C++ autocomplete. For installation instruction see:
 " https://github.com/ycm-core/YouCompleteMe/wiki/Full-Installation-Guide
