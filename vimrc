@@ -2,6 +2,7 @@
 "                                 PLUGGED PLUGINS
 "===============================================================================
 call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-rooter'
 Plug 'cappyzawa/starlark.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
@@ -45,6 +46,10 @@ nnoremap <C-h> :Buffers<CR>
 
 " Disable fuzzy file finder preview window
 let g:fzf_preview_window = ''
+
+" Automatical change the working directory to the folder containing the`.git`
+" directory
+let g:rooter_patterns = ['.git']
 
 " Set git as the default vim-grepper tool
 runtime plugin/grepper.vim
