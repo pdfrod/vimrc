@@ -16,6 +16,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': [
@@ -57,6 +58,11 @@ let g:grepper.tools = ['git']
 let g:grepper.git.grepprg = 'git grep -nGIi --untracked'
 
 let g:prettier#autoformat_require_pragma = 1
+
+"===== NERDTree config =====
+" Show hidden files by default
+let NERDTreeShowHidden=1
+
 
 " C/C++ autocomplete. For installation instruction see:
 " https://github.com/ycm-core/YouCompleteMe/wiki/Full-Installation-Guide
