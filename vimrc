@@ -15,6 +15,7 @@ Plug 'jvirtanen/vim-hcl', {'branch': 'main'}
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'mhinz/vim-grepper'
+Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier', {
@@ -63,6 +64,9 @@ let g:prettier#autoformat_require_pragma = 1
 " Show hidden files by default
 let NERDTreeShowHidden=1
 
+
+" Use NERDTree bookmarks on Startify
+let g:startify_bookmarks = systemlist("cut -sd' ' -f 2- ~/.NERDTreeBookmarks")
 
 " C/C++ autocomplete. For installation instruction see:
 " https://github.com/ycm-core/YouCompleteMe/wiki/Full-Installation-Guide
