@@ -133,6 +133,9 @@ set hlsearch
 " Show the next match while entering a search
 set incsearch
 
+" Don't wrap around the end of the file when doing searches
+set nowrapscan
+
 " Allow switching buffer even if it's not saved yet
 set hidden
 
