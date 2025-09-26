@@ -175,3 +175,10 @@ nnoremap c "1c
 nnoremap C "1C
 nnoremap x "1x
 nnoremap X "1X
+
+vnoremap d "1d
+vnoremap D "1D
+vnoremap c "1c
+vnoremap C "1C
+vnoremap x "1x
+vnoremap X "1X
