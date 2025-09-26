@@ -166,3 +166,12 @@ nnoremap <silent> <C-k> :m .-2<CR>
 " Save Vim backup/swap files inside .vim folder
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
+
+" Store deleted text only on register 1 (i.e., don't mess with the unnamed
+" register)
+nnoremap d "1d
+nnoremap D "1D
+nnoremap c "1c
+nnoremap C "1C
+nnoremap x "1x
+nnoremap X "1X
